@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-C5zTNEVp.js"></script>
+    <script type="module" crossorigin src="./assets/index-BFV7GASK.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-D2vXu_v7.css">
   </head>
 
@@ -29,11 +29,19 @@
 
           <div class="profile__info">
             <h1 class="profile__title"></h1>
-            <button class="profile__edit-button" type="button" aria-label="Редактировать профиль"></button>
+            <button
+              class="profile__edit-button"
+              type="button"
+              aria-label="Редактировать профиль"
+            ></button>
             <p class="profile__description"></p>
           </div>
 
-          <button class="profile__add-button" type="button" aria-label="Добавить карточку"></button>
+          <button
+            class="profile__add-button"
+            type="button"
+            aria-label="Добавить карточку"
+          ></button>
         </section>
 
         <section class="places page__section">
@@ -166,12 +174,23 @@
         </div>
       </div>
 
+      <div class="popup popup_type_remove-card popup_is-animated">
+        <div class="popup__content">
+          <button type="button" class="popup__close" aria-label="Закрыть"></button>
+          <h3 class="popup__title">Вы уверены?</h3>
+
+          <form class="popup__form popup__form_type_remove-card" name="remove-card" novalidate>
+            <button type="submit" class="button popup__button">Да</button>
+          </form>
+        </div>
+      </div>
+
       <div class="popup popup_type_info popup_is-animated">
         <div class="popup__content popup__content_content_info">
           <button type="button" class="popup__close" aria-label="Закрыть"></button>
           <h3 class="popup__title">Статистика карточек</h3>
           <dl class="popup__info"></dl>
-          <h4 class="popup__text">Авторы карточек:</h4>
+          <h4 class="popup__text">Популярные карточки:</h4>
           <ul class="popup__list"></ul>
         </div>
       </div>
